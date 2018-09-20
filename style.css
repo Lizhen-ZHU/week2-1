@@ -1,0 +1,187 @@
+#page-wrap {
+width: viewport;
+margin:40px auto 60px;
+border: 30px solid;
+border-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%) 50;
+/* border-style: solid; */
+/* border-color: #68b0ab; */
+}
+
+/* -------------HEADER---------------- */
+
+header{
+overflow: auto;
+align-items: center;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+h1{
+  color: #364958;
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom: auto;
+}
+
+header h3{
+  font-family: 'Oxygen', sans-serif;
+  color: #68b0ab;
+  text-align: center;
+}
+
+header p.hiding{
+  display: none;
+}
+
+a{
+ border-bottom: 1px dotted black;
+ text-decoration: none;
+ color:#68b0ab;
+}
+
+a:hover{
+ border-bottom-style: solid;
+ color:#386064;
+}
+
+/* ---------------------BODY---------------------- */
+#flex {
+  display: flex;
+  flex-direction: row;
+}
+
+#edu{
+flex: 1;
+/* background-color: #c9e4ca; */
+margin-right: 6px;
+padding:20px;
+margin-left: 20px;
+}
+
+#edu h3{
+  font-family: 'Oxygen', sans-serif;
+  border-bottom: 2px solid #68b0ab;
+  flex-wrap: nowrap;
+}
+
+#edu p{
+  line-height:20%;
+}
+
+#exp{
+  flex:1;
+  /* background-color: #c9e4ca; */
+  padding:20px;
+  margin-right: 20px;
+}
+
+#exp p{
+  line-height: 20%;
+}
+
+#exp h3{
+  font-family: 'Oxygen', sans-serif;
+  border-bottom: 2px solid #68b0ab;
+}
+
+p{
+  color:#364958;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h4{
+  color:#364958;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h4 span{
+  float: right;
+  color:#68b0ab;
+  text-align: right;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.list{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list li{
+    margin: 0;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.workexp{
+  list-style: disc;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+
+/* --------------------------RESPONSIVE-------------------------- */
+@media screen and (max-width: 680px) {
+#page-wrap{
+  border: 8px solid;
+  border-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%)30;
+}
+
+
+  header {
+    display: block;
+  }
+  header h1{
+    text-align: right;
+  }
+
+  header h3{
+    text-align: right;
+  }
+
+  header p.showing{
+    display: none;
+  }
+
+  header p.hiding{
+    display: block;
+    text-align: right;
+  }
+
+  #pic{
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #exp{
+    flex-basis: 100%;
+    order:2;
+    margin:0px;
+  }
+
+  #edu{
+    flex-basis: 100%;
+    order:1;
+    margin:0px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  #edu h4 span{
+    font-size: 16px;
+    float: none;
+  }
+
+
+}
