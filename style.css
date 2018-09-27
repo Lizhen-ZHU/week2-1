@@ -1,11 +1,55 @@
 #page-wrap {
 width: viewport;
-margin:40px auto 60px;
+margin:40px auto 60px;/* top right bottom left */
 border: 30px solid;
 border-image: linear-gradient(-20deg, #dcb0ed 0%, #99c99c 100%) 50;
+
 /* border-style: solid; */
 /* border-color: #68b0ab; */
 }
+
+
+/*--------------week2 class note. flexbox, css animation---------------*/
+
+.row{
+  display: flex;
+  background-color: grey;
+}
+
+.column{
+  padding:20px;
+}
+
+/* below is a column class which also has an additional class side */
+
+.column.side{
+  flex:1;
+}
+
+.column.middle{
+  flex:2;
+  background-color: yellow;
+}
+
+
+.spin{
+  margin-right: 20px;
+  animation-name: spin;
+  animation-duration:4000ms;
+  /* 4000ms = 1 second */
+  animation-timing-function:linear;
+
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
 
 /* -------------HEADER---------------- */
 
@@ -47,6 +91,7 @@ a:hover{
  color:#386064;
 }
 
+
 /* ---------------------BODY---------------------- */
 #flex {
   display: flex;
@@ -61,10 +106,11 @@ padding:20px;
 margin-left: 20px;
 }
 
-#edu h3{
+.subtitle{
   font-family: 'Oxygen', sans-serif;
   border-bottom: 2px solid #68b0ab;
   flex-wrap: nowrap;
+  color: #68b0ab;
 }
 
 #edu p{
@@ -82,10 +128,10 @@ margin-left: 20px;
   line-height: 20%;
 }
 
-#exp h3{
+/* #exp h3{
   font-family: 'Oxygen', sans-serif;
   border-bottom: 2px solid #68b0ab;
-}
+} */
 
 p{
   color:#364958;
@@ -121,6 +167,10 @@ h4 span{
   font-family: 'Oxygen', sans-serif;
 }
 
+#newfont{
+  font-family: 'Notable', sans-serif;
+  color:red;
+}
 
 
 /* --------------------------RESPONSIVE-------------------------- */
@@ -181,6 +231,12 @@ h4 span{
   #edu h4 span{
     font-size: 16px;
     float: none;
+  }
+
+
+  .row{
+    display: flex;
+    flex-direction: column;
   }
 
 
