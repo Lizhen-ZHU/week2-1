@@ -218,6 +218,10 @@ dt{
   color:black;
 }
 
+.footer-copyright a{
+  color:#68b0ab;
+}
+
 /* --------------------------RESPONSIVE-------------------------- */
 @media screen and (max-width: 680px) {
 #page-wrap{
